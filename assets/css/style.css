@@ -30,19 +30,19 @@ img {
 
 .slider__window {
   display: flex;
-  overflow-y: hidden;
   border-radius: 5px;
   max-width: 600px;
 }
 
-.slider__utils {
+.slider-controls {
   display: flex;
   justify-content: space-between;
-  width: 600px;
 }
 
 .slider-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .slider-item {
@@ -52,12 +52,12 @@ img {
 
 .description {
   display: flex;
-  overflow-y: hidden;
   width: 400px;
 }
 
 .description-item {
-  width: 400px;
+  width: 70%;
+  display: none;
 }
 
 .slider-control {
@@ -74,17 +74,30 @@ label {
   cursor: pointer;
 }
 
+.control-item {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 .img-item {
   display: flex;
-  margin-right: 10px;
   align-items: center;
-  display: none
+  display: none;
 }
 
 /* .slider-control:checked ~ label{
   box-shadow: 0px 0px 15px 10px rgba(34, 60, 80, 0.15);
 } */
 
-.slider-control:checked ~ .img-item {
+.slider-control:checked + .img-item {
+  display: block;
+}
+
+.slider-control:checked + .img-item + .description-item {
   display: block;
 }
