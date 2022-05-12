@@ -1,0 +1,90 @@
+/* Base */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 600px;
+  border-radius: 5px;
+}
+
+
+
+/* Layout */
+
+.container {
+  width: 1200px;
+  margin: 10px auto;
+}
+
+
+/* Components */
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider__window {
+  display: flex;
+  overflow-y: hidden;
+  border-radius: 5px;
+  max-width: 600px;
+}
+
+.slider__utils {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.slider-container {
+  display: flex;
+}
+
+.slider-item {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  display: flex;
+  overflow-y: hidden;
+  width: 400px;
+}
+
+.description-item {
+  width: 400px;
+}
+
+.slider-control {
+  display: none;
+}
+
+label {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.img-item {
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+  display: none
+}
+
+/* .slider-control:checked ~ label{
+  box-shadow: 0px 0px 15px 10px rgba(34, 60, 80, 0.15);
+} */
+
+.slider-control:checked ~ .img-item {
+  display: block;
+}

@@ -18,30 +18,39 @@
   <div class="container">
     <div class="slider">
       <div class="slider__window">
-        <div class="container">
-          <figure><img src="assets/img/img-1.jpeg" alt="Mem picture"></figure>
-          <figure><img src="assets/img/img-2.jpeg" alt="Mem picture"></figure>
-          <figure><img src="assets/img/img-3.jpeg" alt="Mem picture"></figure>
-          <figure><img src="assets/img/img-4.jpeg" alt="Mem picture"></figure>
-          <figure><img src="assets/img/img-5.jpeg" alt="Mem picture"></figure>
+        <div class="slider-container">
+          <input name="slider-control" class="slider-control" type="radio" value="img-1" id="img-1" checked>
+          <figure class="img-item"><img src="assets/img/img-1.jpeg" alt="Mem picture"></figure>
+
+          <input name="slider-control" class="slider-control" type="radio" value="img-2" id="img-2">
+          <figure class="img-item"><img src="assets/img/img-2.jpeg" alt="Mem picture"></figure>
+
+          <input name="slider-control" class="slider-control" type="radio" value="img-3" id="img-3">
+          <figure class="img-item"><img src="assets/img/img-3.jpeg" alt="Mem picture"></figure>
+
+          <input name="slider-control" class="slider-control" type="radio" value="img-4" id="img-4">
+          <figure class="img-item"><img src="assets/img/img-4.jpeg" alt="Mem picture"></figure>
+
+          <input name="slider-control" class="slider-control" type="radio" value="img-5" id="img-5">
+          <figure class="img-item"><img src="assets/img/img-5.jpeg" alt="Mem picture"></figure>
         </div>
       </div>
       <div class="slider__utils">
         <div class="description">
-          <div class="container">
-            <div class="description__text"><span>Зачем нам будильник, когда есть расшатанная нервная система, которая не дает нормально спать?</span></div>
-            <div class="description__text"><span>Когда не вытерпел и надел белые кроссовки - И чё? И как пройти?</span></div>
-            <div class="description__text"><span>Ты совсем один в этом огромном мире, пока заряжается телефон...</span></div>
-            <div class="description__text"><span>Мои двери всегда открыты для вас! Выходите.</span></div>
-            <div class="description__text"><span>Настроение: выйти за хлебом и случайно свалить из страны.</span></div>
+          <div class="slider-container">
+            <div class="description-item"><span>Зачем нам будильник, когда есть расшатанная нервная система, которая не дает нормально спать?</span></div>
+            <div class="description-item"><span>Когда не вытерпел и надел белые кроссовки - И чё? И как пройти?</span></div>
+            <div class="description-item"><span>Ты совсем один в этом огромном мире, пока заряжается телефон...</span></div>
+            <div class="description-item"><span>Мои двери всегда открыты для вас! Выходите.</span></div>
+            <div class="description-item"><span>Настроение: выйти за хлебом и случайно свалить из страны.</span></div>
           </div>
         </div>
         <div class="controls">
-          <input name="slider-control" type="radio" value="img-1">
-          <input name="slider-control" type="radio" value="img-2">
-          <input name="slider-control" type="radio" value="img-3">
-          <input name="slider-control" type="radio" value="img-4">
-          <input name="slider-control" type="radio" value="img-5">
+          <label for="img-1"></label>
+          <label for="img-2"></label>
+          <label for="img-3"></label>
+          <label for="img-4"></label>
+          <label for="img-5"></label>
         </div>
       </div>
     </div>
