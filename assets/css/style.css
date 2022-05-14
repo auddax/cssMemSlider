@@ -14,7 +14,16 @@ img {
   border-radius: 5px;
 }
 
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+ul {
+  display: flex;
+  list-style-type: none;
+}
 
 /* Layout */
 
@@ -31,7 +40,7 @@ img {
 .slider {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   width: 600px;
 }
@@ -40,10 +49,11 @@ img {
   display: flex;
   overflow-x: hidden;
   border-radius: 5px;
+  margin: 25px 0;
   max-width: 600px;
 }
 
-.slider-controls {
+.slider__controls {
   display: flex;
 }
 
@@ -83,29 +93,26 @@ img {
 }
 
 label {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.controls-item {
+  cursor: pointer;
   width: 10px;
   height: 10px;
-  margin: 5px;
-  display: inline-block;
   border: 2px solid #72ADFF;
   border-radius: 50%;
   background-color: #72ADFF;
-  cursor: pointer;
 }
 
-label:hover {
+label:hover .controls-item{
   background-color: #fff;
   border: 2px solid #fff;
 }
 
-.control-item {
-  width: 10px;
-  height: 10px;
-  margin: 5px;
-  display: inline-block;
-  border: 1px solid #000;
-  border-radius: 50%;
-  cursor: pointer;
+label:active .controls-item {
+  box-shadow: 0 0 3px 2px #fff;
 }
 
 .img-item {
@@ -156,22 +163,22 @@ label:hover {
 }
 
 
-#img-1:checked ~ .slider-controls>#label-img-1 {
+#img-1:checked ~ .slider__controls #label-img-1 {
   background-color: #202325;
 }
 
-#img-2:checked ~ .slider-controls>#label-img-2 {
+#img-2:checked ~ .slider__controls #label-img-2 {
   background-color: #202325;
 }
 
-#img-3:checked ~ .slider-controls>#label-img-3 {
+#img-3:checked ~ .slider__controls #label-img-3 {
   background-color: #202325;
 }
 
-#img-4:checked ~ .slider-controls>#label-img-4 {
+#img-4:checked ~ .slider__controls #label-img-4 {
   background-color: #202325;
 }
 
-#img-5:checked ~ .slider-controls>#label-img-5 {
+#img-5:checked ~ .slider__controls #label-img-5 {
   background-color: #202325;
 }
