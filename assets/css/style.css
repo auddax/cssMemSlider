@@ -10,7 +10,7 @@ body {
 }
 
 img {
-  max-width: 600px;
+  max-width: 37.5rem;
   border-radius: 5px;
 }
 
@@ -28,7 +28,7 @@ ul {
 /* Layout */
 
 .container {
-  width: 1200px;
+  width: 75rem;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -42,15 +42,15 @@ ul {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
-  width: 600px;
+  width: 37.5rem;
 }
 
 .slider__window {
   display: flex;
   overflow-x: hidden;
   border-radius: 5px;
-  margin: 25px 0;
-  max-width: 600px;
+  margin: 1.56rem 0;
+  max-width: 37.5rem;
 }
 
 .slider__controls {
@@ -72,7 +72,7 @@ ul {
 .slider__descriptions {
   display: flex;
   overflow-x: hidden;
-  width: 400px;
+  width: 25rem;
 }
 
 .descriptions-container {
@@ -85,7 +85,7 @@ ul {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.9rem;
   color: #fff;
-  width: 400px;
+  width: 25rem;
 }
 
 .slider-control {
@@ -126,19 +126,19 @@ label:active .controls-item {
 }
 
 #img-2:checked ~ .slider__window > .slider-container {
-  transform: translate(-600px);
+  transform: translate(-37.5rem);
 }
 
 #img-3:checked ~ .slider__window > .slider-container {
-  transform: translate(-1200px);
+  transform: translate(-75rem);
 }
 
 #img-4:checked ~ .slider__window > .slider-container {
-  transform: translate(-1800px);
+  transform: translate(-112.5rem);
 }
 
 #img-5:checked ~ .slider__window > .slider-container {
-  transform: translate(-2400px);
+  transform: translate(-150rem);
 }
 
 
@@ -147,19 +147,19 @@ label:active .controls-item {
 }
 
 #img-2:checked ~ .slider__descriptions > .descriptions-container {
-  transform: translate(-400px);
+  transform: translate(-25rem);
 }
 
 #img-3:checked ~ .slider__descriptions > .descriptions-container {
-  transform: translate(-800px);
+  transform: translate(-50rem);
 }
 
 #img-4:checked ~ .slider__descriptions > .descriptions-container {
-  transform: translate(-1200px);
+  transform: translate(-75rem);
 }
 
 #img-5:checked ~ .slider__descriptions > .descriptions-container {
-  transform: translate(-1600px);
+  transform: translate(-100rem);
 }
 
 
@@ -181,4 +181,23 @@ label:active .controls-item {
 
 #img-5:checked ~ .slider__controls #label-img-5 {
   background-color: #202325;
+}
+
+@media screen and (max-width: 767px) {
+  .slider {
+    flex-direction: column;
+  }
+
+  .slider__window {
+    order: 1;
+  }
+
+  .slider__controls {
+    order: 2;
+    margin: 0 auto 1.56rem;
+  }
+
+  .slider__descriptions {
+    order: 3;
+  }
 }
