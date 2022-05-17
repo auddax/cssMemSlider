@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">  
+  <title>CSS Mem Slider</title>
+</head>
+<body>
+  <div class="container">
+    <div class="slider">
+      <input name="slider-control" class="slider-control" type="radio" value="img-1" id="img-1" checked>
+      <input name="slider-control" class="slider-control" type="radio" value="img-2" id="img-2">
+      <input name="slider-control" class="slider-control" type="radio" value="img-3" id="img-3">
+      <input name="slider-control" class="slider-control" type="radio" value="img-4" id="img-4">
+      <input name="slider-control" class="slider-control" type="radio" value="img-5" id="img-5">
+      <div class="slider__window">
+        <div class="slider-container">
+          <figure class="img-item"><img src="assets/img/img-1.jpeg" alt="Mem picture"></figure>
+          <figure class="img-item"><img src="assets/img/img-2.jpeg" alt="Mem picture"></figure>
+          <figure class="img-item"><img src="assets/img/img-3.jpeg" alt="Mem picture"></figure>
+          <figure class="img-item"><img src="assets/img/img-4.jpeg" alt="Mem picture"></figure>
+          <figure class="img-item"><img src="assets/img/img-5.jpeg" alt="Mem picture"></figure>
+        </div>
+      </div>
+      <div class="slider__descriptions">
+        <div class="descriptions-container">
+          <div class="description-item"><span>Зачем нам будильник, когда есть расшатанная нервная система, которая не дает нормально спать?</span></div>
+          <div class="description-item"><span>Не захожу, чтобы не расстраиваться: тиндер, фронтальная камера, приложение банка, рабочий чат...</span></div>
+          <div class="description-item"><span>Ты совсем один в этом огромном мире, пока заряжается телефон...</span></div>
+          <div class="description-item"><span>Мои двери всегда открыты для вас! Выходите.</span></div>
+          <div class="description-item"><span>Настроение: выйти за хлебом и случайно свалить из страны.</span></div>
+        </div>
+      </div>
+      <div class="slider__controls">
+        <ul>
+          <li>
+            <label for="img-1">
+              <div class="controls-item" id="label-img-1"></div>
+            </label>
+          </li>
+          <li>
+            <label for="img-2">
+              <div class="controls-item" id="label-img-2"></div>
+            </label>
+          </li>
+          <li>
+            <label for="img-3">
+              <div class="controls-item" id="label-img-3"></div>
+            </label>
+          </li>
+          <li>
+            <label for="img-4">
+              <div class="controls-item" id="label-img-4"></div>
+            </label>
+          </li>
+          <li>
+            <label for="img-5">
+              <div class="controls-item" id="label-img-5"></div>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
